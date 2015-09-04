@@ -907,23 +907,28 @@ home improvement advice from knowledgeable Canadian contractors.</p>
        
           <div class="form-group">
             <label for="jobDesc">Job Description</label>
+              <div class="question-pop">?</div>
             <textarea class="form-control" rows="6"  data-class="job-description" id="jobDesc"></textarea>  
           </div> 
                
           <div class="form-group col-50 right-padding-6">
             <label for="postalCode">Postal Code</label>
+              <div class="question-pop">?</div>
             <input type="postalCode" class="form-control" placeholder="" data-class="postal-code" id="postalCode">
           </div>
           <div class="form-group col-50 left-padding-6">
             <label for="city">City</label>
+              <div class="question-pop">?</div>
             <input type="email" class="form-control" placeholder="" data-class="city-tooltip" id="city">
           </div>
           <div class="form-group col-50 right-padding-6">
             <label for="phoneNumber">Phone Number <span>(Optional)</span></label>
+              <div class="question-pop">?</div>
             <input type="email" class="form-control" placeholder="" data-class="phone-tooltip" id="phoneNumber">
           </div>
           <div class="form-group col-50 left-padding-6">
             <label for="exampleJobTitle">Number of Phone Cals</label>
+              <div class="question-pop">?</div>
             <select class="form-control select-style" data-class="phonecalls-tooltip">
               <option>1</option>
               <option selected="selected">Up to 10 calls</option>
@@ -963,10 +968,12 @@ home improvement advice from knowledgeable Canadian contractors.</p>
           <a href="" class="form-sub-title">Already have any account? Sign In</a>
           <div class="form-group col-50 right-padding-6">
             <label for="firstName">Your First Name</label>
+              <div class="question-pop">?</div>
             <input type="" class="form-control" placeholder="" data-class='name-tooltip' id="firstName">
           </div>
           <div class="form-group col-50 left-padding-6">
             <label for="emailAddress">Email</label>
+              <div class="question-pop">?</div>
             <input type="email" class="form-control" placeholder="" data-class='email-tooltip' id="emailAddress">
           </div>
           <div class="form-title">Join Our Newsletter?</div>
@@ -985,16 +992,17 @@ home improvement advice from knowledgeable Canadian contractors.</p>
           
         </form>
         <a href="" class="btn-red-big">Post My Job Now</a>
-        <script>
-                $(".form-control").click(function(){
-                    
+         <script>
+                $(".form-control").click(function(event){
+                    event.stopPropagation();
+                    if($(window).width()>769){
                     var that = this;
                     var classAttr = $(that).attr("data-class");
                     $('.text-bluebg').hide();
                     $('.tooltip-body').hide();
                     $('.'+classAttr).show();
                     $(".small-tooltip").remove();
-                    
+                    }
                    /* if($(window).width()<769){
                         var content = $("."+classAttr).html();
                         if(undefined != content){
@@ -1003,6 +1011,39 @@ home improvement advice from knowledgeable Canadian contractors.</p>
                         }
                     }*/
                 });
+            
+            $(document).on("click",".question-pop",function(event){
+                debugger;
+                event.stopPropagation();
+                 var that = $(this).parent().find(".form-control");
+                 var classAttr = $(that).attr("data-class");
+                    $('.text-bluebg').hide();
+                    $('.tooltip-body').hide();
+                    //$('.'+classAttr).show();
+                    $(".small-tooltip").remove();
+               
+                 if($(window).width()<769){
+                        var content = $("."+classAttr).html();
+                        if(undefined != content){
+                            var htmlInfo = "<div class='small-tooltip'><div class='inner-tooltip'>"+content+"</div></div>";
+                            $('body').append(htmlInfo);
+                            var windowHeight = $(window).height();
+                            var elemHeight = $(".inner-tooltip").height();
+                            
+                            var topM = (windowHeight - elemHeight)/2+"px";
+                            debugger;
+                            $(".inner-tooltip").css("top",topM);
+                            
+                        }
+                    }
+            });
+          
+            
+             $(document).on("click","body", function(){
+                $(".tooltip-body").hide();
+                  $(".small-tooltip").hide();
+            });
+            
         </script>
         <!--<script>
             

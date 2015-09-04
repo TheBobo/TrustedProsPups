@@ -2443,7 +2443,15 @@ a.openMenu.hiring-guide{background-image: url(../images/menu/hiring-guides-icon.
 img.sub-banner{display:none !important}
 .membership-pricing .membership-table .title .tit-sec.tit-sec4 { width: 42%;}
 .question-pop {
-	display: block !important;
+	
+    display: block !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    background-color: #ccc !important;
+    text-align: center !important;
+    line-height: 30px !important;
+
 }
 
 }
@@ -4491,6 +4499,32 @@ color:#FFFFFF;
     width: 80%;
     margin-top: 28px;
 }
+
+.small-tooltip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 999999;
+}
+
+.inner-tooltip{
+    position: relative;
+    top: 30%;
+    width: 50%;
+    left: 25%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+     box-shadow: 10px 10px 5px #555;
+    
+}
+
+.question-pop{
+    display: none;
+}
 form {
     display: inline-block;
     width: 100%;
@@ -4884,38 +4918,7 @@ form {
 	box-sizing: border-box;
 }
 
-.poppy {
-	position: absolute;
-	z-index: 10002;
-	background-color: #fff;
-	border: 1px solid #eee;
-	box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.2);
-	padding: 5px 20px;
-	border-radius: 3px;
-	width: 50%;
-}
 
-/*.close-btn {
-  height: 15px;
-  width: 15px;
-  border-radius: 15px;
-  margin: 5px -10px;
-  float: right;
-  background-color: #BC5B46;
-  content: "";
-  cursor: pointer;
-}*/
 
-#poppyScreen {
-  background-color: #000;
-  position: absolute;
-  z-index: 998;
-  height: 100%;
-  width: 100%;
-  opacity: 0.4;
-  display: none;
-}
-button:focus{outline:none !important}
-.question-pop {
-	display: none;
-}
+    
+
