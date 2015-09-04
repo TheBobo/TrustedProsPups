@@ -1,0 +1,1579 @@
+
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Home Improvement Starts Here. Find Contractor Reviews, Pictures and More at TrustedPros</title>
+<meta name="description" content="Access contractor ratings and reviews, home improvement pictures, articles, advice and more at TrustedPros. Connect with customer-rated home service contractors like, plumbers, electricians, roofers, painters and more." />
+<meta name="google-site-verification" content="bb2D_wzHeRVjt5yh_RaCd9Xjz2YggvioESpLXNXTOyI" />
+<meta name="msvalidate.01" content="86A6608FB09FF4B8DE3B805F8BDC1706" />
+<link rel="canonical" href="https://trustedpros.ca" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link href="tp-combined.css" rel="stylesheet" type="text/css">
+<script src="jquery-all.js"></script>
+<script>
+$(document).ready(function(){
+$(".citys").click(function(){
+var slidngId =$(this).attr('id');
+$(".popular-searchs").animate({width:'toggle'},350);
+$("#hidden-sr").css('display', 'block');
+$("#slide_"+slidngId).css('display', 'block');
+});
+$(".bake").click(function(){
+var sldngId =$(this).attr('id');
+$(".popular-searchs").animate({width:'toggle'},350);
+$("#hidden-sr").css('display', 'none');
+$("#slide_"+sldngId).css('display', 'none');
+});
+
+$(".search-tabs-menu").click(function(){
+var sr_id =$(this).attr('id');
+$("#"+sr_id).siblings("ul").toggle();
+ if($("#"+sr_id).css('display') == 'block'){
+$("#"+sr_id).addClass('sel');
+}if($("#"+sr_id).siblings("ul").css('display') == 'none'){
+$("#"+sr_id).removeClass('sel');
+}
+});
+///Copy
+$("#autocomplete1").click(function(){
+$("#dropmenu1").css("display","none");
+});
+$("#autocomplete1").focusin(function(){
+$("#dropmenu1").css("visibility","hidden");
+});
+$("#autocomplete1").keypress(function(){
+$("#dropmenu1").css("display","none");
+});
+$("#autocomplete1").mouseenter(function(){
+$("#dropmenu1").css("display","block");
+});
+$("#autocomplete1").mouseleave(function(){
+$("#dropmenu1").css("visibility","hidden");
+});
+///Copy
+});
+</script>
+
+<script>
+$(function(){
+$('.mob-nav-search').reaktion();
+});
+/*$(function(){
+$('.footer-mob').reaktion({
+arrowsToggleOnly: false,
+effect: 'slide',
+animateSubNav: true,
+});
+});*/
+$(function() {
+$('#footer-nav').smartmenus();
+});
+</script>
+<script>
+jQuery(function(){
+jQuery('.mob-nav').reaktion({
+navIcon: '<img src="https://trustedpros.ca/images/mobile-menu.jpg">',
+//arrowIcon: '<img src="images/mob-open.png">',
+onOpen: function(){
+jQuery('.nav-bars').html('<img src="https://trustedpros.ca/images/mobile-menu-close.jpg">');
+jQuery("#nav-mobile").css("display", "none");
+jQuery('#mobile-search-icon').addClass("mobile-search-icon");
+jQuery('#mobile-search-icon').removeClass("search-icon-close");
+},
+onClose: function(){
+jQuery('.nav-bars').html('<img src="https://trustedpros.ca/images/mobile-menu.jpg">');
+},
+arrowsToggleOnly: false,
+});  
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function($) {
+"use strict";
+/*
+*  Simple image gallery. Uses default settings
+*/
+$('.fancybox').fancybox();
+/*
+*  Different effects
+*/
+$(document).ready(function() {
+$('.fancybox-media').fancybox({
+openEffect  : 'none',
+closeEffect : 'none',
+helpers : {
+media : {}
+}
+});
+});
+});(jQuery);
+</script> 
+<script type="text/javascript">
+$(document).ready(function(){ 
+$(".fancybox").fancybox({
+'width'  : 955,   // set the width
+'height' : 600,   // set the height
+'type'   : 'iframe'   // tell the script to create an iframe
+});
+}); 
+</script>
+<style type="text/css">
+.fancybox-custom .fancybox-skin {
+box-shadow: 0 0 50px #222;
+}
+</style>
+<script>
+
+function header_changeSearchType()
+{
+if(document.getElementById("header_by_business").checked == true)
+{
+document.getElementById("header_business").style.display = "block";
+document.getElementById("header_eg").style.display = "none";
+}
+else
+{
+document.getElementById("header_business").style.display = "none";
+document.getElementById("header_eg").style.display = "block";
+}
+}
+function header_showField(){
+if(document.getElementById("header_main-search").style.display == "none"){
+document.getElementById("header_main-search").style.display = "block";
+document.getElementById("s2id_job_sub_cat2").className = "select2-container select2-container-active select2-dropdown-open";
+document.getElementById("header_search_contractor").focus();
+}else{
+document.getElementById("header_main-search").style.display = "none";
+document.getElementById("s2id_job_sub_cat2").className = "select2-container";
+}
+}
+function header_hideField(){
+if(document.getElementById("header_main-search").style.display == "block"){
+document.getElementById("header_main-search").style.display = "none";
+document.getElementById("s2id_job_sub_cat2").className = "select2-container";
+}
+}
+function header_showField1(){
+if(document.getElementById("header_select2-drop2").style.display == "none"){
+document.getElementById("header_select2-drop2").style.display = "block";
+document.getElementById("s2id_job_sub_cat3").className = "select2-container select2-container-active select2-dropdown-open";
+document.getElementById("header_business_name").focus();
+}else{
+document.getElementById("header_select2-drop2").style.display = "none";
+document.getElementById("s2id_job_sub_cat3").className = "select2-container";
+}
+}
+function header_hideField1(){
+if(document.getElementById("header_select2-drop2").style.display == "block"){
+document.getElementById("header_select2-drop2").style.display = "none";
+document.getElementById("s2id_job_sub_cat3").className = "select2-container";
+}
+}
+function header_showLocation(){  
+if(document.getElementById("header_select2-dropdown").style.display == "none"){
+document.getElementById("header_select2-dropdown").style.display = "block";
+document.getElementById("s2id_postal_srch").className = "select2-container select2-container-active select2-dropdown-open";
+document.getElementById("header_search_where").focus();
+}else{
+document.getElementById("header_select2-dropdown").style.display = "none";
+document.getElementById("s2id_postal_srch").className = "select2-container";
+}
+}
+function header_hideLocation(){
+if(document.getElementById("header_select2-dropdown").style.display == "block"){
+document.getElementById("header_select2-dropdown").style.display = "none";
+document.getElementById("s2id_postal_srch").className = "select2-container";
+}
+}
+</script>
+
+</head>
+<body>
+    <header class="header sb-slide">    
+    
+    	<div class="container">
+        	<span class="search-icon-m open-close-menu"></span>
+            <div class="logo-holder">
+            <a href="https://trustedpros.ca"><img class="logo" src="https://trustedpros.ca/images/logo.png" alt=""></a>
+            </div>
+            <a href="https://trustedpros.ca"><img class="logo-thumb" src="https://trustedpros.ca/images/logo-thumb.png" alt=""></a>
+     
+             <span class="sb-toggle-right"></span>
+            <div id="hd-search">
+            <form autocomplete="off" id="searchform2" onsubmit="return(searchSubmit('job_sub_cat', 'postal'))" method="get" action="https://trustedpros.ca/members_search_for_contractor_results_new_checklist.asp">
+           
+                		<div class="find-field">
+                        	<input name="job_sub_cat" id="job_sub_cat" class="find-field-clear" type="text" onBlur="if(this.value == '') { this.value='e.g. Plumber, Roofer, Handyman'}" onFocus="if (this.value == 'e.g. Plumber, Roofer, Handyman') {this.value=''}" value="e.g. Plumber, Roofer, Handyman" >
+                            
+                           <div id="outputbox1">
+                            <p id="outputcontent"></p>
+                          </div>
+
+                        </div>
+
+                    	
+                        <div class="find-field near-field">
+                        	<input class="find-field-clear" name="postal" id="postal"  name="" type="text" onBlur="if(this.value == '') { this.value='Where'}" onFocus="if (this.value == 'Where') {this.value=''}" value="Where" />
+                            
+                          <div id="outputbox">
+                            <p id="outputcontent"></p>
+                          </div>
+
+                        </div>
+                        
+                
+                    
+                    <input name="searchpage" id="searchpage" type="hidden" value="1">
+<input name="miles" type="hidden" value="30"><input name="sort_by" type="hidden" value="serving" />
+                    <!--a onClick="return(subbmt('searchform2'))" href="#." class="search-icon"></a-->
+                   
+            
+		      <input type="submit" value="" class="search-icon" >
+              
+           
+            </form>
+            </div>
+            <div class="top-btns">
+            	<a class="loginfc fancybox.iframe main-sec" href="https://trustedpros.ca/join.asp">join</a> 
+                <a class="signin" href="https://trustedpros.ca/login">Sign in</a>
+            </div>
+            
+             
+        </div>
+        
+        
+    </header>
+<div id="sb-site">
+
+<div id="wrap">
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98745-5', 'auto');
+  ga('send', 'pageview');
+  
+
+</script>
+
+<script type="text/javascript">
+
+	
+	
+	
+	
+$(document).ready(function(e) {
+    
+
+$("a:not([href*=javascript]):not([href*=#]):not([class*=fancybox\\.iframe]):not([class*=full-rev])").on("click", function(){
+  var href = $(this).attr("href");
+	createLoader();
+  var animDuration = 1000;
+
+  // Do animation here; duration = animDuration.
+
+  setTimeout(function () {
+    window.location = href;
+  }, animDuration);
+
+  return false; // prevent user navigation away until animation's finished
+});
+
+});	
+	
+window.onload = function(){
+	try{$("#preloader").remove()}catch(er){}
+}
+
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        //window.location.reload()
+		try{$("#preloader").remove()}catch(er){} 
+    }
+};
+	
+	
+	
+	function createLoader(){
+		try{$("#preloader").remove()}catch(er){}
+		var preLoaderDiv = document.createElement("div");
+		preLoaderDiv.setAttribute("id", "preloader");
+		
+		var statusDiv = document.createElement("div");
+		statusDiv.setAttribute("id", "status");
+		
+		var loader = document.createElement("div");
+		loader.setAttribute("class", "loader");
+		
+		var innerLoaderDiv = document.createElement("div");
+		innerLoaderDiv.setAttribute("class", "loader-inner ball-pulse");
+		
+		var div1 = document.createElement("div");
+		var div2 = document.createElement("div");
+		var div3 = document.createElement("div");
+		
+		preLoaderDiv.appendChild(statusDiv);
+		preLoaderDiv.appendChild(loader);
+		
+		loader.appendChild(innerLoaderDiv);
+		
+		innerLoaderDiv.appendChild(div1);
+		innerLoaderDiv.appendChild(div2);
+		innerLoaderDiv.appendChild(div3);
+		
+		document.body.appendChild(preLoaderDiv);
+	}
+</script>
+
+<script>
+
+</script>
+
+
+<script>
+$(document).ready(function(){	
+	
+
+  $(".loginfc").fancybox({
+    'width'  : 612,           // set the width
+    'height' : 600,           // set the height
+    'type'   : 'iframe'       // tell the script to create an iframe
+  });
+
+	
+	$(".citys").click(function(){
+    
+	var slidngId = $(this).attr('id');
+	
+	$(".popular-searchs").animate({width:'toggle'},350);
+ 
+ 	$("#hidden-sr").css('display', 'block');
+ 
+ 	$("#slide_"+slidngId).css('display', 'block');
+	 
+  });
+
+	$(".bake").click(function(){
+	
+	var sldngId = $(this).attr('id');
+	
+	$(".popular-searchs").animate({width:'toggle'},350);
+	
+	$("#hidden-sr").css('display', 'none');
+	
+	$("#slide_"+sldngId).css('display', 'none');
+  
+  });
+  
+  
+  
+    $(".search-tabs-menu").click(function(){
+		var sr_id = $(this).attr('id');
+		 $("#"+sr_id).siblings("ul").toggle();
+		 if($("#"+sr_id).css('display') == 'block'){
+			$("#"+sr_id).addClass('sel');
+			}if($("#"+sr_id).siblings("ul").css('display') == 'none'){
+			$("#"+sr_id).removeClass('sel');
+			}
+    });
+
+
+
+///Copy Changes
+	//auto-complete area1
+
+
+
+// auto-complete find
+  $("body").on('click','#job_sub_cat', function(){
+	  if($(".header").hasClass("smaller")){
+		  
+	  $(".search-icon").css("margin","20px 0 0 0");
+
+		  }else{
+			  
+	  $(".search-icon").css("margin","0px 0 0 0");
+		  }
+   $("#dropmenu1").css("display","none");
+  });
+
+  $("body").on('focusin', '#job_sub_cat', function(){
+ $("#dropmenu1").css("visibility","hidden");
+  });
+
+  $("body").on('keypress', '#job_sub_cat', function(){
+	  
+	  if($(".header").hasClass("smaller")){
+	  $(".search-icon").css("margin","20px 0 0 0");
+
+		  }else{
+	  $(".search-icon").css("margin","20px 0 0 0");
+		  }
+   $("#dropmenu1").css("visibility","hidden");
+  });
+
+  $("body").on('mouseenter', '#job_sub_cat', function(){
+	  
+	  
+  if(document.getElementById("job_sub_cat").value == "" || document.getElementById("job_sub_cat").value == "e.g. Plumber, Roofer, Handyman"){
+	
+		  if($(".header").hasClass("smaller")){
+	  $(".search-icon").css("margin","20px 0 0 0");
+
+		  }else{
+
+	  $(".search-icon").css("margin","20px 0 0 0");
+		  }
+  $("#dropmenu1").css("display","block");
+  
+	  }
+  });
+  $("#job_sub_cat").mouseleave(function(){
+  $("#dropmenu1").css("visibility","hidden");
+  });
+///Copy Changes
+  
+   //$(".reviews-more").click(function(){
+	$('body').on('click', '.reviews-more', function() {	
+	 $(".more-customer-reviews").toggle();
+	 	  if($(".more-customer-reviews").css('display') == 'none'){
+			  
+            $('.reviews-more').html("See "+$("#c_nt_review").val()+" more customer reviews");
+			location.hash = "#review";
+			//document.getElementById("reviews-more").scrollIntoView();
+        } else {
+            $('.reviews-more').html("Close");
+
+        }
+		
+		
+		
+  });
+
+});
+
+
+function reviewViewToggleu(n_Reviews){
+	
+	 if(document.getElementById("more-customer-reviews").style.display == 'none'){
+		 	 document.getElementById("more-customer-reviews").style.display = "block";
+             document.getElementById('reviews-more').innerHTML = "Close";
+            
+			//document.getElementById("reviews-more").scrollIntoView();
+        } else {
+				document.getElementById("more-customer-reviews").style.display = "none";
+			 document.getElementById('reviews-more').innerHTML = "See "+n_Reviews+" more customer reviews";
+		
+        }
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+<script>
+$(document).on("mouseleave",".navi",function(){
+                     $(".new-menu").hide();
+  });
+</script>
+
+     
+    </div>
+    <div id="nav">
+    
+    <div class="nav-header">
+    	
+    <div class="navi">
+    	
+        
+        <div class="container menuContainer">
+        	
+             
+            
+			<ul class="floating-menu ">
+                <li><a class="openMenu trusted-pros" data-id='0' href="https://trustedpros.ca/">Find Trusted Pros</a></li>
+                <li><a class="openMenu prost-project active-link" data-id='1' href="https://trustedpros.ca/post">Post My Project</a><span>|</span></li>
+                <li><a class="openMenu rate-contractor" data-id='2' href="https://trustedpros.ca/hiring-guide">Rate My Contractor</a><span>|</span></li>
+                <li><a class="openMenu ask-pros" data-id='3' href="https://trustedpros.ca/write-a-review"> Ask the Pros</a><span>|</span></li>
+                <li><a class="openMenu home-design" data-id='4' href="https://trustedpros.ca/forum">Home Design Ideas</a><span>|</span></li>
+                <li><a class="openMenu hiring-guide" data-id='5' href="https://trustedpros.ca/photos">Hiring Guide</a><span>|</span></li>
+                <li><a class="openMenu helful-articles" data-id='6' href="https://trustedpros.ca/articles">Helpful Articles</a><span>|</span></li>
+
+            </ul>
+            
+        </div> 
+        <div class="container menubottom">
+        <div class="new-menu" data-id='0'>
+            
+                    <ul id="cities" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                        
+                        <div class="title-links">Popular Searches</div>
+						
+                        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tab2" aria-labelledby="ui-id-2" aria-selected="false" id="2"><a href="#tab2" class="ui-tabs-anchor" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2" >Scarborough</a></li>
+                        
+                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab3" aria-labelledby="ui-id-3" aria-selected="true" id="3"><a href="#tab3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3" >Toronto</a></li>
+                        
+                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab4" aria-labelledby="ui-id-4" aria-selected="true" id="4"><a href="#tab4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4" >Etobicoke</a></li>
+                        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab5" aria-labelledby="ui-id-6" aria-selected="true" id="5"><a href="#tab5" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5" >Mississauga</a></li>
+                        
+                        <li class="" ><a href="" class="link-green" role="presentation">More Locations</a></li>
+                    </ul>
+                    <!-- List of Cities -->
+
+					
+                    
+                    <div class="description" id="tab2" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="true" aria-hidden="true" style="display: block;">
+                        <div class="title-links-desc border-bottom">Scarbourough Contractors</div>
+                        
+                        <ul class="links">
+
+                           <li><a href="https://trustedpros.ca/on/toronto/basement-renovations">Basement Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/general-contracting">General Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/bathroom-renovations">Bathroom Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/handyman">Handyman Services</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/carpentry">Carpenters</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/hvac">HVAC Contractors</a></li>
+                            </ul>
+                         
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/decks">Heating Cooling Companies</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/home-additions">Deck Builders</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/design-build">Home Addition Builders</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/kitchen-renovations">Design Build Firms</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/drywalling">Kitchen Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/painting">Landscaping Company</a></li>
+                           </ul> 
+
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/electrical">Drywall Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/plumbing">Painting Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/flooring">Electricians</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Plumbers</a></li>
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Roofing Companies</a></li>
+                            
+                           <li><a class="link-green" href="https://trustedpros.ca/on/toronto/roofing">More Categories</a></li>  
+                        </ul>
+                    </div>
+                    
+                    
+                    <!-------hidden------->
+                    
+                    <div class="description ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab3" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="false" style="display: none;">
+                        <div class="title-links-desc border-bottom">Toronto Contractors</div>
+                        
+                        <ul class="links">
+
+                           <li><a href="https://trustedpros.ca/on/toronto/basement-renovations">Basement Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/general-contracting">General Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/bathroom-renovations">Bathroom Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/handyman">Handyman Services</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/carpentry">Carpenters</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/hvac">HVAC Contractors</a></li>
+                            </ul>
+                         
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/decks">Heating Cooling Companies</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/home-additions">Deck Builders</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/design-build">Home Addition Builders</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/kitchen-renovations">Design Build Firms</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/drywalling">Kitchen Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/painting">Landscaping Company</a></li>
+                           </ul> 
+
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/electrical">Drywall Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/plumbing">Painting Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/flooring">Electricians</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Plumbers</a></li>
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Roofing Companies</a></li>
+                            
+                           <li><a class="link-green" href="https://trustedpros.ca/on/toronto/roofing">More Categories</a></li>  
+                        </ul>
+                    </div>
+
+					
+                    <!-------hidden------->
+                    
+                    <div class="description ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab4" aria-labelledby="ui-id-4" role="tabpanel" aria-expanded="false" aria-hidden="false" style="display: none;">
+                        <div class="title-links-desc border-bottom">Etobicoke Contractors</div>
+                        
+                        <ul class="links">
+
+                           <li><a href="https://trustedpros.ca/on/toronto/basement-renovations">Basement Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/general-contracting">General Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/bathroom-renovations">Bathroom Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/handyman">Handyman Services</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/carpentry">Carpenters</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/hvac">HVAC Contractors</a></li>
+                            </ul>
+                         
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/decks">Heating Cooling Companies</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/home-additions">Deck Builders</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/design-build">Home Addition Builders</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/kitchen-renovations">Design Build Firms</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/drywalling">Kitchen Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/painting">Landscaping Company</a></li>
+                           </ul> 
+
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/electrical">Drywall Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/plumbing">Painting Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/flooring">Electricians</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Plumbers</a></li>
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Roofing Companies</a></li>
+                            
+                           <li><a class="link-green" href="https://trustedpros.ca/on/toronto/roofing">More Categories</a></li>  
+                        </ul>
+                    </div>
+
+					
+                    <!-------hidden------->
+                    
+                    <div class="description ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab5" aria-labelledby="ui-id-5" role="tabpanel" aria-expanded="false" aria-hidden="false" style="display: none;">
+                        <div class="title-links-desc border-bottom">Mississauga Contractors</div>
+                        
+                        <ul class="links">
+
+                           <li><a href="https://trustedpros.ca/on/toronto/basement-renovations">Basement Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/general-contracting">General Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/bathroom-renovations">Bathroom Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/handyman">Handyman Services</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/carpentry">Carpenters</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/hvac">HVAC Contractors</a></li>
+                            </ul>
+                         
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/decks">Heating Cooling Companies</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/home-additions">Deck Builders</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/design-build">Home Addition Builders</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/kitchen-renovations">Design Build Firms</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/drywalling">Kitchen Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/painting">Landscaping Company</a></li>
+                           </ul> 
+
+                        <ul class="links">
+                           <li><a href="https://trustedpros.ca/on/toronto/electrical">Drywall Contractors</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/plumbing">Painting Contractors</a></li>
+                            
+                           <li><a href="https://trustedpros.ca/on/toronto/flooring">Electricians</a></li> 
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Plumbers</a></li>
+                           
+                           <li><a href="https://trustedpros.ca/on/toronto/roofing">Roofing Companies</a></li>
+                            
+                           <li><a class="link-green" href="https://trustedpros.ca/on/toronto/roofing">More Categories</a></li>  
+                        </ul>
+                    </div>
+
+                    <div class="clr"></div>
+                   
+        </div>
+            <div class="new-menu first-1" data-id='1'>
+                <div class="title-new-menu">Connect with contractors fast. Get the work done right.</div>
+                  <div class="row">
+                  <div class="width80">
+                    <p>From minor home repairs to major renovations, post your project now and receive competitive bids from local 
+contractors within hours. Our Job Posting Tools along with our <a href="" class="link-green2">TrustScore System</a> and <a href="" class="link-green2">Hiring Guide</a> will make 
+it easy and safe to find the perfect contractor for your job. 
+</p>
+                  </div>
+                  </div>
+                  <div class="new-menu-footer">
+			  		<a href="" class="call-to-action-green">Post My Project (FREE)</a>
+              	  </div>
+            </div>
+            <div class="new-menu second-1" data-id='2'>
+               <div class="title-new-menu">Help other homeowners make the right decision.</div>
+                  <div class="row">
+                  <div class="width80">
+                    <p>Here’s your chance to let others know your opinion about the contractor you’ve hired. In addition to 
+rating contractors on a scale from 1 to 5, you can provide a written review to explain why you liked 
+or disliked a certain contractor. </p>
+                  </div>
+                  </div>
+                  <div class="new-menu-footer">
+			  		<a href="" class="call-to-action-green">Rate My Contractor</a>
+              	  </div>
+            </div>
+            <div class="new-menu third-1" data-id='3'>
+               <div class="title-new-menu">Plan your project right. Get advice from the pros.</div>
+                  <div class="row">
+                  <div class="width80">
+                    <p>Planning your project starts with getting all the right information. Use our Ask The Pros forum to get 
+home improvement advice from knowledgeable Canadian contractors.</p>
+                  </div>
+                  </div>
+                  <div class="new-menu-footer">
+                      <a href="" class="call-to-action-green">Post My Question</a>
+                      <a href="" class="call-to-action-green">Browse Other Questions</a>
+              	  </div> 	
+            </div>
+            <div class="new-menu fourth-1" data-id='4'>
+               <div class="title-new-menu">Helpful home improvement articles.</div>
+            
+              	<div class="width80">
+                	<a href="https://trustedpros.biz/photos/kitchens" class="image-holder">
+                       
+                            <img src="https://trustedpros.biz/images/menu/kitchens.png">
+                            <p>Kitchens</p>
+                        
+                    </a> 
+                    <a href="https://trustedpros.biz/photos/bathrooms" class="image-holder">                  
+                        
+                            <img src="https://trustedpros.biz/images/menu/bathrooms.png">
+                            <p>Bathrooms</p>
+                        
+                    </a>
+                    <a href="https://trustedpros.biz/photos/living-rooms" class="image-holder">
+                        
+                            <img src="https://trustedpros.biz/images/menu/livingrooms.png">
+                            <p>Living Rooms</p>
+                        
+                    </a>
+                  <a href="https://trustedpros.biz/photos/decks" class="image-holder">
+                  
+                            <img src="https://trustedpros.biz/images/menu/decks.png">
+                            <p>Decks</p>
+                    
+                  </a>
+                    <a href="https://trustedpros.biz/photos" class="image-holder">    
+                       
+                            <img src="https://trustedpros.biz/images/menu/browse-all.png">
+                            <p>All Categories</p>
+                        
+                    </a>
+                </div>
+                
+			   
+               
+            </div>
+            <div class="new-menu fifth-1" data-id='5'>
+              <div class="title-new-menu">Helpful home improvement articles.</div>
+              <div class="row">
+              	<div class="width80">
+                	<ul class="width30">
+                    <li><span class="check-menu"></span><p>Planning the Project</p></li>
+                    <li><span class="check-menu"></span><p>Selecting a Contractor</p></li>
+                    <li><span class="check-menu"></span><p>Assessing Bids</p></li>
+                    </ul>
+                    <ul class="width30">
+                    <li><span class="check-menu"></span><p>Get a Written Contract</p></li>
+                    <li><span class="check-menu"></span><p>Contract Forms</p></li>
+                    <li><span class="check-menu"></span><p>As the Project Progresses</p></li>
+                    </ul>
+                    <ul class="width30">
+                    <li><span class="check-menu"></span><p>Dealing with Problems</p></li>
+                    <li><span class="check-menu"></span><p>Payment & Holdbacks</p></li>
+                    <li><span class="check-menu"></span><p>Printable Forms</p></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="new-menu-footer">
+			  		<a href="" class="call-to-action-green">Explore Articles by Category</a>  
+                </div>
+            </div>
+            <div class="new-menu sixth-1" data-id='6'>
+              <div class="title-new-menu">Helpful home improvement articles.</div>
+                  <div class="row">
+                  <div class="width70">
+                    <p>Industry experts, contractors, homeowners and other professionals offer project-specific advice, research 
+    and how tos to help make your home improvement projects successful.</p>
+                  </div>
+                  </div>
+                  <div class="new-menu-footer">
+			  		<a href="" class="call-to-action-green">Explore Articles by Category</a>
+                    <a href="" class="guide-link">The Guide To Home Renovations</a>
+              	  </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <script>
+		function searchSubmit(cat, postal){
+			var msg = "";
+			if (document.getElementById(cat).value == "" || document.getElementById(cat).value == "e.g. Plumber, Roofer, Handyman"){
+				msg += "Please enter a valid category name.\n"
+			}
+			
+			if (document.getElementById(cat).value == "Business Name"){
+				msg += "Please enter a business name to search.\n"
+			}
+			
+			if (document.getElementById(postal).value == "" || document.getElementById(postal).value == "Where" ){
+				msg += "Please enter a valid city or postal code.\n"
+			}
+			
+			if(msg !=""){
+				alert(msg);
+				return false;
+			}
+			else{
+				createLoader();
+			}
+			
+		}
+	</script>
+    
+<div class="container">
+    <div class="head-sub">
+        <div class="title-head-sub">Post My Project</div>
+        <p class="subline-head-sub">The first step towards finding a great contractor. </p>
+        <p class="content-head-sub">Post your job here and get quick responses from local, reputable contractors. Review credentials, previous customer feedback and more for peace of mind.</p>
+    </div>
+    <div class="col-70">
+    	<div class="title-form">Tell Us About Your Project</div>
+        <form>
+          <div class="form-group job-title-holder">
+            <label for="jobTitle">Job Title</label>
+            <div class="question-pop">?</div>
+            
+            <input type="email" class="form-control" data-class="job-title"> 
+                     
+          </div>  
+          <!--<div class="poppy" id="popup-1">
+			<p>Popup Example Text Here</p>
+		</div>-->
+       
+          <div class="form-group">
+            <label for="jobDesc">Job Description</label>
+            <textarea class="form-control" rows="6"  data-class="job-description" id="jobDesc"></textarea>  
+          </div> 
+               
+          <div class="form-group col-50 right-padding-6">
+            <label for="postalCode">Postal Code</label>
+            <input type="postalCode" class="form-control" placeholder="" data-class="postal-code" id="postalCode">
+          </div>
+          <div class="form-group col-50 left-padding-6">
+            <label for="city">City</label>
+            <input type="email" class="form-control" placeholder="" data-class="city-tooltip" id="city">
+          </div>
+          <div class="form-group col-50 right-padding-6">
+            <label for="phoneNumber">Phone Number <span>(Optional)</span></label>
+            <input type="email" class="form-control" placeholder="" data-class="phone-tooltip" id="phoneNumber">
+          </div>
+          <div class="form-group col-50 left-padding-6">
+            <label for="exampleJobTitle">Number of Phone Cals</label>
+            <select class="form-control select-style" data-class="phonecalls-tooltip">
+              <option>1</option>
+              <option selected="selected">Up to 10 calls</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </form>
+        <div class="file-upload">
+        <div id="singleupload">+Add Files</div><span class="additional-text">Add documents or images that might be helpful  (Optional)</span>
+        
+        </div>
+        <form>
+        <div class="form-title">Show My Job to Contractors:</div>
+        <div class="form-group col-50 right-padding-6">
+          <label for="locatedwithin">Located Within</label>
+            <select class="form-control select-style" data-class="located-tooltip">
+              <option>1</option>
+              <option selected="selected">50 kilometers</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group col-50 left-padding-6">
+            <label for="maxrating">With a Minimum Rating of</label>
+            <select class="form-control select-style" data-class="rating-tooltip">
+              <option>1</option>
+              <option selected="selected">3.5 Stars</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-title">Register with TrustedPros</div>
+          <a href="" class="form-sub-title">Already have any account? Sign In</a>
+          <div class="form-group col-50 right-padding-6">
+            <label for="firstName">Your First Name</label>
+            <input type="" class="form-control" placeholder="" data-class='name-tooltip' id="firstName">
+          </div>
+          <div class="form-group col-50 left-padding-6">
+            <label for="emailAddress">Email</label>
+            <input type="email" class="form-control" placeholder="" data-class='email-tooltip' id="emailAddress">
+          </div>
+          <div class="form-title">Join Our Newsletter?</div>
+          <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                &nbsp;<b>Yes,</b> send me offers and information about home improvements.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                &nbsp;<b>No,</b> not right now.
+              </label>
+            </div>
+          
+        </form>
+        <a href="" class="btn-red-big">Post My Job Now</a>
+        <script>
+                $(".form-control").click(function(){
+                    
+                    var that = this;
+                    var classAttr = $(that).attr("data-class");
+                    $('.text-bluebg').hide();
+                    $('.tooltip-body').hide();
+                    $('.'+classAttr).show();
+                    $(".small-tooltip").remove();
+                    
+                   /* if($(window).width()<769){
+                        var content = $("."+classAttr).html();
+                        if(undefined != content){
+                            var htmlInfo = "<div class='small-tooltip'>"+content+"</div>";
+                            $(that).parent().append(htmlInfo);
+                        }
+                    }*/
+                });
+        </script>
+        <!--<script>
+            
+		  var fieldExample = $('#jobTitle');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+               var htmlInfo = "<div class='small-tooltip'>"+$(".job-title").html()+"</div>";
+                debugger;
+                $('#jobTitle').parent().append(htmlInfo);
+				var div = $('.job-title').show();
+				$(document).bind('focusin.job-title click.job-title',function(e) {
+					if ($(e.target).closest('.job-title, #jobTitle').length) return;
+					$(document).unbind('.job-title');
+					div = $('.job-title').hide();
+				});
+			});
+			
+			var fieldExample = $('#jobDesc');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.job-description').show();
+				$(document).bind('focusin.job-description click.job-description',function(e) {
+					if ($(e.target).closest('.job-description, #jobDesc').length) return;
+					$(document).unbind('.job-description');
+					div = $('.job-description').hide();
+				});
+			});
+			
+			var fieldExample = $('#postalCode');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.postal-code').show();
+				$(document).bind('focusin.postal-code click.postal-code',function(e) {
+					if ($(e.target).closest('.postal-code, #postalCode').length) return;
+					$(document).unbind('.postal-code');
+					div = $('.postal-code').hide();
+				});
+			});
+			
+		
+			var fieldExample = $('#city');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.city-tooltip').show();
+				$(document).bind('focusin.city-tooltip click.city-tooltip',function(e) {
+					if ($(e.target).closest('.city-tooltip, #city').length) return;
+					$(document).unbind('.city-tooltip');
+					div = $('.city-tooltip').hide();
+				});
+			});
+			
+			var fieldExample = $('#phoneNumber');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.phone-tooltip').show();
+				$(document).bind('focusin.phone-tooltip click.phone-tooltip',function(e) {
+					if ($(e.target).closest('.phone-tooltip, #phoneNumber').length) return;
+					$(document).unbind('.phone-tooltip');
+					div = $('.phone-tooltip').hide();
+				});
+			});
+			
+			var fieldExample = $('#firstName');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.name-tooltip').show();
+				$(document).bind('focusin.name-tooltip click.name-tooltip',function(e) {
+					if ($(e.target).closest('.name-tooltip, #firstName').length) return;
+					$(document).unbind('.name-tooltip');
+					div = $('.name-tooltip').hide();
+				});
+			});
+			
+			var fieldExample = $('#emailAddress');
+	
+			fieldExample.focus(function() {
+				var div = $('.text-bluebg').hide();
+				var div = $('.email-tooltip').show();
+				$(document).bind('focusin.email-tooltip click.email-tooltip',function(e) {
+					if ($(e.target).closest('.email-tooltip, #emailAddress').length) return;
+					$(document).unbind('.email-tooltip');
+					div = $('.email-tooltip').hide();
+				});
+			});
+			
+			
+			$('.email-tooltip').hide();
+		  </script>-->
+    </div>
+    <div class="col-30">
+    <div class="job-title tooltip-body">
+    	<p>For example:</p>
+        <p>Plaster ceiling 12x12ft</p>
+        <p>Gas fire installation & boiler service</p>
+        <p>Painting 3 rooms</p>
+    </div>
+    
+    <div class="job-description tooltip-body">
+    	<p>A detailed description will generate more interest from <strong>Architectural Specialists</strong>.</p>
+        <p>For the best response, consider the points below:</p>
+       
+        <li>Describe the project you wish to undertake.</li>
+        <li>Do you have builder lined up?</li>
+        <li>Have you sought advice from your local authority planning office?</li>
+        <li>Would you like a planning application to be submitted on your behalf?</li>
+        <li>Are you the property owner or a prospective buyer?</li>
+        <li>Which statement best describes you?</li>
+        <br>
+        <li>I am actively looking to hire an architect</li>
+        <li>I am looking for a guide price or advice</li>
+
+    </div>
+    <div class="postal-code tooltip-body">
+    	<p>Full postcode of the location where work is to take place. This will be used to create a map of the location.</p>
+    </div>
+    <div class="city-tooltip tooltip-body">
+    	<p>Example Text Here</p>
+    </div>
+    <div class="phone-tooltip tooltip-body">
+    	<p>Phone Example Text Here</p>
+    </div>
+    <div class="name-tooltip tooltip-body">
+    	<p>Name Example Text Here</p>
+    </div>
+    <div class="email-tooltip tooltip-body">
+    	<p>email Example Text Here</p>
+    </div>
+    <div class="phonecalls-tooltip tooltip-body">
+    	<p>Phone Calls Example Text Here</p>
+    </div>
+    <div class="rating-tooltip tooltip-body">
+    	<p>rating Example Text Here</p>
+    </div>
+    <div class="located-tooltip tooltip-body">
+    	<p>Located Example Text Here</p>
+    </div>
+    	<div class="text-bluebg">
+        	<p><b>Dear Sir or Madam,</b></p>
+            <br>
+            <p>If you are looking for a builder or contractor, 
+            this is the place to start.</p>
+            <br>
+            <p>First you will need to fill out this form, 
+            describing what needs to be done. Once 
+            your job is approved, relevant tradespeople 
+            will be notified. You’ll receive email alerts 
+            as interested contractors respond to your 
+            posting. You’ll then compare contractors by 
+            viewing profiles, work history, qualifications 
+            and customer reviews.</p>
+            <br>
+            <p>You are not obligated to hire any contractor,
+            but please respect their time by submitting 
+            serious requests only.</p>
+            <br>
+            <p>Call us at (855) 890-7767 if you have any 
+            questions.</p>
+            <br>
+            <p>Kind Regards,</p>
+            <p>TrustedPros Team</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-new">
+	<div class="container">
+       <div class="footer-links-holder" id="footer-acdn">	
+          
+                    <ul class="footer-links w1" >
+                        <li><a><span>Homeowners</span></a>
+                            <ul>
+                                <li><a href="https://trustedpros.ca/login">My Account</a></li>
+                                <li><a href="https://trustedpros.ca/search">Contractor Search</a></li>
+                                <li><a href="https://trustedpros.ca/post">Post Your Project</a></li>
+                                <li><a href="https://trustedpros.ca/write-a-review">Write a Review</a></li>
+                                <li><a href="https://trustedpros.ca/forum">Ask The Pros</a></li>
+                                <li><a href="https://trustedpros.ca/hiring-guide ">Hiring Guide</a></li>
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    <ul class="footer-links w2" >
+                        <li><a><span>Service Pros</span></a>
+                            <ul>
+                                <li><a href="https://trustedpros.ca/login">Sign In</a></li>
+                                <li><a href="https://trustedpros.ca/categories">Categories</a></li>                        
+                                <li><a href="https://trustedpros.ca/pricing-location ">Add Your Company</a></li>
+                                <li><a href="https://trustedpros.ca/terms-conduct">Code of Conduct</a></li>
+                               
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    <ul class="footer-links w3" >
+                        <li><a><span>Other Resources</span></a>
+                            <ul>
+                                <li><a href="https://trustedpros.ca/commercial">Commercial Contractors</a></li>
+                                <li><a href="https://trustedpros.ca/photos">Design Photos</a></li>
+                                <li><a href="https://trustedpros.ca/articles">Articles</a></li>
+                                <li><a href="https://trustedpros.ca/trustscore">TrustScore</a></li>
+                                <li><a href="https://trustedpros.ca/review-guidelines">Review Guidelines</a></li> 
+                                <li><a href="https://trustedpros.com">TrustedPros.com</a> </li>                     
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                    
+                    <ul class="footer-links w4" >
+                        <li><a><span>About TrustedPros</span></a>
+                          <ul>
+                                <li><a href="https://trustedpros.ca/about">About Us</a></li>
+                                <li><a href="https://trustedpros.ca/contact">Contact</a></li>
+                                <li><a href="https://trustedpros.ca/careers">Careers</a></li>
+                                <li><a href="https://trustedpros.ca/logos">Logos &amp; Assets</a></li>
+                                <li><a href="https://trustedpros.ca/terms-conduct">Terms of Use</a></li>
+                                <li><a href="https://trustedpros.ca/review-guidelines">Privacy Policy</a></li>
+                          </ul>
+                        </li>                    
+                    </ul>
+          
+                    <ul class="footer-links w5" >
+                        <li><a><span>Follow Us</span></a>
+                            <ul>
+                                <li><a class="fb" href="https://www.facebook.com/TrustedPros">Facebook</a></li>
+                                <li><a class="tw" href="https://twitter.com/trustedpros">Twitter</a></li>
+                                <li><a class="gp" href="https://plus.google.com/102803786722518010191" rel="publisher">Google</a></li>	
+                                <li><a class="li" href="http://www.linkedin.com/company/trustedpros">LinkedIn</a></li>
+                            </ul>
+                        </li>
+                        <li><a><span>Partners</span></a>
+                            <ul>
+                                <li><a class="cs" href="http://www.comparasave.com/">ComparaSave</a></li>                           
+                            </ul>
+                        </li>       
+                    </ul>
+           
+       </div> 
+      
+       <p>The reviews on this site are the personal opinion of the Author and not of TrustedPros Inc. By using this site you agree to our <a href="https://trustedpros.ca/terms">Terms of Use</a>. <br> Information submitted is subject to our <a href="https://trustedpros.ca/privacy">Privacy Policy</a>. Copyright © 2004 - 2015 TrustedPros Inc.  All Rights Reserved</p>
+	</div>
+</footer>
+<div class="clear"></div>
+    
+
+<script>
+    $(document).ready(function(){
+function subbmt(form){
+	
+	var msg = "";
+	if (document.getElementById("job_sub_cat").value == "" || document.getElementById("job_sub_cat").value == "e.g. Plumber, Roofer, Handyman"){
+		msg += "Please select a keyword for category \n";
+	}
+	if (document.getElementById("postal").value == "" || document.getElementById("postal").value == "Where"){
+		msg += "Please select a city / postal code \n";
+	}
+	createLoader();
+	if(msg!=""){
+	try{$("#preloader").remove()}catch(er){}
+	alert(msg)
+	return false;
+	}else{
+		var animDuration = 500;
+		
+		  setTimeout(function () {
+			document.getElementById(form).submit();
+		  }, animDuration);
+		
+	}
+	  
+}
+    });
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.uploadfile.min.js"></script>
+<script>
+ $("#singleupload").uploadFile({
+url:"upload.php",
+multiple:false,
+dragDrop:false,
+maxFileCount:1,
+fileName:"myfile"
+});
+</script>
+<script src="slidebars.js"></script>
+		<script>
+			(function($) {
+				$(document).ready(function() {
+					$.slidebars();
+				});
+			}) (jQuery);
+		</script>
+
+
+</div>
+    </div>
+    <div class="sb-slidebar sb-right " style="top:0"></div>
+    <div class="sb-slidebar sb-left sb-style-push">
+    	<div class="categories-title-m">Categories<span class="categories-title-m1"></span></div>
+        
+    </div>
+    <script>
+	 $(function(){
+		  var $button = $('.top-btns').clone();
+		  $('.sb-right').html($button);
+		});  
+	</script>   
+  
+    <script>
+    var hhs = 0;
+        function makeMenu(){
+            var windowWidth = $(window).width();
+            if(windowWidth < 769){
+                $("#sb-site1").attr("id","sb-site");
+                var menu = $(".floating-menu").html();
+                
+                //var leftSideBar = $("#acdnmenu").html();
+               // 
+                //leftSideBar = '<div class="left-small-sec" id="acdnmenu">'+leftSideBar+'</div>'
+                if(menu != undefined)
+                {
+                menu="<ul>"+menu+"</ul>";
+               // $(".sb-left").append(leftSideBar);
+                    $( "#acdnmenu").clone().appendTo( ".sb-left" );
+                     $(".left-sec").find( "#acdnmenu").remove();
+                $(".sb-right").append(menu);
+                    
+                $(".floating-menu").remove();
+                    //$(".find-bath").remove();
+                //$("#hd-search").addClass("close-smenu");
+                    hhs = $("#hd-search").height();
+                    $("#hd-search").css("height",0);
+                    $("#hd-search").addClass("close-smenu");
+                     $(".footer-links-holder").attr("id","footer-acdn");
+                    
+                   var itemUl = $(".footer-links-holder").find(".footer-links").find("li").find("ul");
+ 
+ 
+ 
+                
+                  $(".footer-links-holder").find(".footer-links").removeClass("footer-links");
+                    
+                }
+            }
+            else{
+ 
+                    $(".footer-links-holder").attr("id","");
+                    $(".footer-links-holder>ul").addClass("footer-links");;
+                $(".sb-slidebar").removeClass("sb-active");
+                $("#sb-site").css("transform","");
+                
+                $(".sb-slidebar").css("margin","0");
+                $(".sb-slidebar").css("transform","");
+                $("#sb-site").attr("id","sb-site1");
+                $("#sb-site1").css("transform","");
+                 var menu = $(".sb-right").find("ul").html();
+                
+                var leftSideBar = $(".sb-left").html();
+                 if(menu != undefined)
+                {
+                menu="<ul class='floating-menu'>"+menu+"</ul>";
+                $(".sb-right").find("ul").remove();
+                    
+                $(".menuContainer ").append(menu);
+                //$(leftSideBar).appendTo(".left-sec");
+                    
+                    $( "#acdnmenu").clone().insertBefore( $(".left-sec").find(".medium-sec") );
+				$("#hd-search").css("height", hhs);
+                    $(".sb-left").find( "#acdnmenu").remove();
+                }
+            }
+    }
+    $(document).ready(function(){
+        makeMenu();
+        $(window).resize(function(){
+            makeMenu();
+        });
+   
+            $(document).on("click",".parrent-li",function(){
+            
+            var currentHeight = $(this).css("height");
+            
+            //debugger;
+            if(  $(this).hasClass("expand1234") == true)
+            {
+                $(this).removeClass("expand1234");
+                $(this).find(".arrowImage").addClass("remove");
+                $(this).find(".arrow-right").removeClass("active")
+                  $(this).slideDown('normal')
+                  $(this).find("ul").slideDown('normal')
+                $(this).animate({height:40},400);
+                $(this).find("ul").animate({height:0},400);
+            }
+            else{
+                $(this).css("height","100%");
+                $(this).find("ul").css("height","100%");
+                var heig= $(this).height();
+                $(this).find("ul").css("height","0%");
+                $(this).css("height","0%");
+                $(this).addClass("expand1234");
+                
+                
+                $(this).animate({height:heig},400);
+                $(this).find("ul").animate({height:heig},400);
+                $(this).find(".arrowImage").addClass("current");
+                $(this).find(".arrow-right").addClass("active");
+            }
+        });
+        
+        $(document).on("mouseover",".ui-tabs-anchor",function(){
+            var href = $(this).attr("href");
+            $(".description").hide();
+            $(href).show();
+            $(".ui-tabs-anchor").parent().removeClass("ui-tabs-active ui-state-active");
+            $(".ui-tabs-anchor[href='"+href+"'").parent().addClass("ui-tabs-active ui-state-active");
+        });
+        
+        $(document).on("mouseleave",".new-menu",function(){
+         //   
+            $(".new-menu").hide();
+            $(".menubottom").css("border-top-width",0);
+            $(".menuBottomWrap").css("margin-top","0px");
+    });
+              $(document).on("mouseover",".new-menu",function(event){
+                  event.stopPropagation();
+            $(".menubottom").css("top","0px");
+    });
+            $(document).on("mouseover","body",function(event){
+             $(".new-menu").hide();
+              $(".menubottom").css("border-top-width",0);
+          });
+
+        
+         $(document).on("mouseover",".menuContainer",function(event){
+             event.stopPropagation();
+                  $(".new-menu").hide();
+            $(".menubottom").css("border-top-width",0);
+            $(".menuBottomWrap").css("margin-top","0px");
+         });
+            $(document).on("mouseover",".openMenu",function(event){
+           
+                 event.stopPropagation();
+                hover1=true;
+                $(".menuBottomWrap").css("margin-top","-51px");
+                event.stopPropagation();
+                    var hoverId = $(this).attr("data-id");
+         $(".new-menu").hide();
+     //$(".new-menu[data-id='"+hoverId+"']").addClass("menubottom");
+                     $(".menubottom").css("top","-3px");
+                var ch = $(".menubottom").css("height")+3;
+                $(".menubottom").css("height",ch+"px");
+                $(".menubottom").css("border-top-width","3px");
+                $(".new-menu").fadeOut(0);
+                $(".new-menu").css("display","none");
+                $(".new-menu[data-id='"+hoverId+"']").fadeIn(0);
+ });
+      
+
+
+            $(".open-close-menu").bind('touchstart click', function(e){
+        if($("#hd-search").hasClass("close-smenu")==true){
+            
+           // $("#hd-search").addClass("open-smenu");
+            $("#hd-search").removeClass("close-smenu");
+             $("#hd-search").addClass("open-smenu",400);
+            //$("#hd-search").slideUp( "slow" );
+             $(".open-close-menu").addClass("search-icon-c");
+             $(".open-close-menu").removeClass("search-icon-m");
+            
+             $(".categories-mob").css("margin-top","220px");
+            $("#hd-search").css("height", hhs);
+        }
+        else{
+           $("#hd-search").removeClass("open-smenu");
+            $("#hd-search").addClass("close-smenu",400);
+            $(".categories-mob").css("margin-top","70px");
+            //$("#hd-search").slideDown( "slow" );
+             $(".open-close-menu").removeClass("search-icon-c");
+             $(".open-close-menu").addClass("search-icon-m");
+            $("#hd-search").css("height", 0);
+            
+        }
+                
+                ScrollIt();
+    });
+           
+    });
+</script>
+    
+    <script type="text/javascript">
+        function ScrollIt(){
+            var searchFormShown = $("#hd-search").css("display");
+            if(searchFormShown=="none" || $(window).width() > 769){
+                var scroll =$(window).scrollTop();
+                if (scroll >= 342) {
+                $(".header").addClass('smaller');
+                    $(".new-menu").hide();
+                } else {
+                $(".header").removeClass("smaller");
+                }
+                if (scroll >= 170) {
+                    $(".new-menu").hide();
+                $(".nav-header").addClass('small-nav');
+                } else {
+                $(".nav-header").removeClass("small-nav");
+                }
+            }
+            else{
+                $(".header").removeClass("smaller");
+                $(".nav-header").removeClass("small-nav");
+            }
+        }
+$(function() {
+$(window).scroll(function() {
+    ScrollIt();
+});
+    
+   
+});
+        
+        
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+  $('#footer-acdn').find('ul').find('li').find('ul').parent().addClass("has-sub");
+
+  $('#footer-acdn').find('ul').find('li').find('a').on("click",function() {
+    var checkElement = $($(this).parent().parent());
+    
+    $('#footer-acdn li').removeClass('active');
+      $('#footer-acdn').find('ul').find('li').removeClass('active');
+    $(this).parent().addClass('active');	
+    
+    if((checkElement.is('ul')) && (checkElement.hasClass('visible')==true)) {
+      
+      checkElement.find("ul").slideUp('normal');
+        $(checkElement).removeClass('visible');
+        $(this).parent().removeClass('active');	
+        
+    }
+    
+    else if((checkElement.is('ul')) && (checkElement.hasClass('visible')==false)) {
+      $('#footer-acdn ul ul:visible').slideUp('normal');
+      $(checkElement).find("ul").slideDown('normal');
+        $(checkElement).addClass('visible');
+    }
+    
+    if (checkElement.is('ul')) {
+      return false;
+    } else {
+      return true;	
+    }		
+  });
+
+});
+</script>
+
+</body>
+</html>
